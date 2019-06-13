@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>专业介绍</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+-->
+	<!--webfont-->
+	<!--
+<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+-->
+	<!----font-Awesome----->
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/professionalIntrocducion.css">
+			<!----font-Awesome----->
+</head>
+<body>
+	<div class="header_about"></div>
+	<div class="header-home">
+		<div class="fixed-header">
+			<div class="logo">
+				<a href="index.html"> <span class="secondary">Careers,skills</span>
+					<span class="main">Ability</span>
+				</a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul>
+					<li class="active"><a href="#">学院概况</a></li>
+					<li><a href="#">教育教学</a></li>
+					<li><a href="#">科教研究</a></li>
+					<li><a href="#">学团工作</a></li>
+					<li><a href="#">党政思建</a></li>
+				</ul>
+				<!-- script-nav -->
+
+				<script>
+					$("span.menu").click(function() {
+						$(".top-nav ul").slideToggle(500, function() {
+						});
+					});
+				</script>
+				<!-- //script-nav -->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--script-->
+	<script>
+		$(document).ready(function() {
+			$(".top-nav li a").click(function() {
+				$(this).parent().addClass("active");
+				$(this).parent().siblings().removeClass("active");
+			});
+		});
+	</script>
+	<!-- script-for sticky-nav -->
+	<script>
+		$(document).ready(function() {
+			var navoffeset = $(".header-home").offset().top;
+			$(window).scroll(function() {
+				var scrollpos = $(window).scrollTop();
+				if (scrollpos >= navoffeset) {
+					$(".header-home").addClass("fixed");
+				} else {
+					$(".header-home").removeClass("fixed");
+				}
+			});
+
+		});
+	</script>
+	<!-- /script-for sticky-nav -->
+	<!--//header-->
+	<!-- 中间开始 -->
+	<div class="middle">
+		<div class="text">
+			<h1 align="center">专业介绍</h1>
+
+		</div>
+		<div class="picture">
+			<ul class="picture-1">
+				<li><a href="jsj.html"><img src="images/b1.jpg" alt=""></a></li>
+				<li><a href="dz.html"><img src="images/b2.jpg" alt=""></a></li>
+				<li><a href="wl.html"><img src="images/b3.jpg" alt=""></a></li>
+				<li><a href="dq.html"><img src="images/b4.jpg" alt=""></a></li>
+			</ul>
+			<ul class="picture-2 ">
+				<li><div>
+						<a href="jsj.html"><p class="number-01">计算机科学与技术</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="dz.html"><p class="number-01">电子信息科学与技术</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="wl.html"><p class="number-01">网络工程</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="dq.html"><p class="number-01">电气工程及其自动化</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+			</ul>
+		</div>
+		<div class="picture">
+			<ul class="picture-1">
+
+				<li><a href="rj.html"><img src="images/b5.jpg"
+						alt="images/zp01.png.png"></a></li>
+				<li><a href="tj.html"><img src="images/b6.jpg"
+						alt="images/zp01.png.png"></a></a></li>
+				<li><a href="sj.html"><img src="images/b7.jpg"
+						alt="images/zp01.png.png"></a></a></li>
+				<li><a href="yd.html"><img src="images/b8.jpg"
+						alt="images/zp01.png.png"></a></a></li>
+			</ul>
+			<ul class="picture-2 ">
+				<li><div>
+						<a href="rj.html"><p class="number-01">软件工程</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="tj.html"><p class="number-01">统计学</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="sj.html"><p class="number-01">数据科学与大数据技术</p>
+							<p class="number-02">学制四年</p>
+							<p class="number-03">授予工学学士学位</p></a>
+					</div></li>
+				<li><div>
+						<a href="yd.html"><p class="number-01">移动通信技术</p>
+							<p class="number-02">学制三年</p>
+							<p class="number-03">授予大学专科学历</p></a>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 中间结束 -->
+
+</body>
+</html>
