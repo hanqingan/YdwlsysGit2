@@ -1,0 +1,296 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ */
+ol,
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.txt-rt {
+	text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+	text-align: left;
+}
+
+/* text align left */
+.txt-center {
+	text-align: center;
+}
+
+/* text align center */
+.float-rt {
+	float: right;
+}
+
+/* float right */
+.float-lt {
+	float: left;
+}
+
+/* float left */
+.clear {
+	clear: both;
+}
+
+
+/* html,
+body {
+	font-size: 100%;
+	font-family: 'Nunito', sans-serif;
+	background: #2CB149;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+ */
+/* ul,
+label {
+	margin: 0;
+	padding: 0;
+}
+
+body a:hover,
+body a {
+	text-decoration: none;
+}
+ */
+/*-- main --*/
+/* 过渡效果 */
+.agile_copy_right p a,
+.w3ls_order a,
+input[type="submit"] {
+	transition: .5s ease-in;
+	-webkit-transition: .5s ease-in;
+	-moz-transition: .5s ease-in;
+	-o-transition: .5s ease-in;
+	-ms-transition: .5s ease-in;
+}
+
+.main {
+	width: 95%;
+	margin: 4px auto;
+	padding-top: 20px;
+}
+
+.main h1 {
+	font-size: 2.7em;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1px;
+}
+/* 最下面的 */
+/* .agile_copy_right {
+	margin: 5em 0 0;
+}
+
+.agile_copy_right p {
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.8em;
+}
+
+.agile_copy_right p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.agile_copy_right p a:hover {
+	color: #e8d032;
+	text-decoration: none;
+} */
+
+/* 主体 */
+.w3l_main_grids{
+	padding-top: 50px;
+}
+
+.w3l_main_grid {
+	float: left;
+	width: 250px;
+	text-align: center;
+	background: #fff;
+}
+/* 顶部栏 */
+.w3l_main_grid_top {
+	padding: 15px;
+	background: #f5f5f5;
+}
+/* 顶部字体 */
+.w3l_main_grid_top h3 {
+	font-size: 15px;
+	color: #212121;
+	position: relative;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+}
+
+.w3l_main_grid_top h3 span {
+	font-weight: 700;
+	color: #33bf70;
+}
+
+.w3l_main_grid_top h3:after {
+	content: '';
+	background: #212121;
+	width: 15%;
+	height: 2px;
+	position: absolute;
+	bottom: 0%;
+	left: 41%;
+}
+
+.w3l_main_grid_middle {
+	padding: 0em 2em 1em;
+	text-align: left;
+	position: relative;
+}
+
+.w3l_main_grid_middle ul li {
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	padding-left: 2em;
+	background: url(../images/tick.png) no-repeat 0px 0px;
+}
+
+.w3l_main_grid_middle:after {
+	content: '';
+	background: #33bf70;
+	width: 15%;
+	height: 1px;
+	position: absolute;
+	bottom: 0%;
+	left: 41%;
+}
+
+.w3ls_order {
+	padding: 1em 2em 1em;
+	text-align: center;
+}
+
+.w3ls_order h3 {
+	color: #212121;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.w3ls_order a {
+	padding: 8px 30px;
+	background: #33bf70;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	font-size: 14px;
+}
+
+.w3ls_order a:hover {
+	background: #212121;
+}
+
+.w3l_main_grid:nth-child(2) {
+	margin: 0 2em;
+}
+.w3l_main_grid:nth-child(4) {
+	margin: 0 2em;
+}
+/* 第二个 */
+
+.w3l_main_grid_top1 h3 span {
+	color: #e832a9;
+}
+
+.w3l_main_grid_middle1:after {
+	background: #e832a9;
+}
+
+.w3ls_order1 a {
+	background: #e832a9;
+}
+/* 第三个 */
+.w3l_main_grid_top2 h3 span {
+	color: #e8d032;
+}
+
+.w3l_main_grid_middle2:after {
+	background: #e8d032;
+}
+
+.w3ls_order2 a {
+	background: #e8d032;
+}
+
+/* 第四个 */
+.w3l_main_grid_top3 h3 span {
+	color: blue;
+}
+
+.w3l_main_grid_middle3:after {
+	background: blue;
+}
+
+.w3ls_order3 a {
+	background:blue;
+}
+
+/* ====================================== */
+
+.w3_delivery_address {
+	margin-bottom: 1em;
+}
+.w3l_main_grid {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.w3l_main_grid:hover {
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	z-index: 1;
+}
