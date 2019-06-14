@@ -25,7 +25,7 @@
 		-->
 	<!----font-Awesome----->
 
-	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css"/>
 
 		<!----font-Awesome----->
 		<!--Animation-->
@@ -38,6 +38,29 @@
 				new WOW().init();
 			</script>
 		-->
+		
+		<script type="text/javascript">
+
+function jiaoXueMingShi(){
+	alert("开始用ajax请求后台！");
+	$.ajax({
+        type:"post",
+        url:"http://localhost:8080/DQAndInformationWeb/TeacherServlet",
+        dataType:"json",
+        success:function(result){
+		var data = JSON.parse(result).teacher;
+		alert(result.teacher.name);
+		alert(result.name);
+		alert(teacher.name);
+		alert(result);
+		alert(data.name);
+        },
+        error:function(){
+           alert("发生错误：");
+        }
+	});
+}
+</script>
 </head>
 <body>
 	<div class="header wow fadeInUpBig" data-wow-delay="0.4s">
@@ -293,28 +316,6 @@
 	<div class="students wow  zoomInDown" data-wow-delay="0.4s">
 		<div class="container">
 			<h3>师资队伍</h3>
-			<!--  
-			<div class="custom_testimonials_wrap_inner">
-				<address>
-					<img src="images/boxiaoyong.jpg" class="img-responsive" alt="" />
-				</address>
-				<div class="extra-wrap">
-					<i class="fa quote fa-quote-left"></i>
-					<p>
-						薄小永 <br> 职称：讲师 <br> 职务：专职教师 <br>
-									主讲课程：数据结构、离散数学、数据库原理、数据库开发技术、静态网站设计 <br>
-										科学研究：信息机房可视化运维辅助管理研究；电网企业信息运维可视化平台研究与实现等 <br>
-											教学研究：“互联网+”背景下地方应用型本科院校教育教学改革研究等
-					</p>
-					<p class="m_2">
-						<a href="#">-&nbsp;&nbsp; 查看全部师资队伍</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			
-			-->
-
 
 			<div class="w3l_main_grids">
 				<!-- 	
@@ -337,7 +338,7 @@
 						</ul>
 					</div>
 					<div class="w3ls_order">
-						<a class="popup-with-zoom-anim" href="teacher/index1.html">查看更多</a>
+						<a class="popup-with-zoom-anim" href="teacher/zaizhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 				<!-- 			
@@ -361,7 +362,7 @@
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order1">
-						<a class="popup-with-zoom-anim" href="teacher/index2.html">查看更多</a>
+						<a class="popup-with-zoom-anim" href="teacher/rencaijihua/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 
@@ -385,7 +386,7 @@
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order2">
-						<a class="popup-with-zoom-anim" href="teacher/index3.html">查看更多</a>
+						<a class="popup-with-zoom-anim" href="" onclick="jiaoXueMingShi();">查看更多</a>
 					</div>
 				</div>
 
@@ -409,7 +410,7 @@
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order3">
-						<a class="popup-with-zoom-anim" href="teacher/index4.html">查看更多</a>
+						<a class="popup-with-zoom-anim" href="teacher/jianzhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -455,6 +456,5 @@
 			Copyright©2018-2019吉林农业科技学院电气与信息工程学院版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：吉林市吉林经济技术开发区翰林路77号&nbsp;&nbsp;邮编：132101&nbsp;&nbsp;电话：0432-63509888、63509118
 		</p>
 	</div>
-
 </body>
 </html>
