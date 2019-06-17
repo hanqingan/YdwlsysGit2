@@ -18,7 +18,6 @@ public class zsDaoImpl implements zsDao{
 
 		 QueryRunner qr =new QueryRunner(DataSourceUtils.getDataSource()); 
 		 String sql="select * from navigation where cid = ?";
-			System.out.println("dao");
 		 List<Navigation> list=qr.query(sql, new BeanListHandler<Navigation>(Navigation.class),cid);
 		
 		return list;
@@ -40,27 +39,5 @@ public class zsDaoImpl implements zsDao{
 		 List<Essay> list=qr.query(sql,new BeanListHandler<Essay>(Essay.class),name);
 		return list;
 	}
-
-	/*
-	 * @Override public List<Navigation> findBycid(String cid) throws Exception {
-	 * QueryRunner qr =new QueryRunner(DataSourceUtils.getDataSource()); String
-	 * sql="select * from navigation where cid = ?"; List<Navigation> list =
-	 * qr.query(sql,new BeanListHandler<Navigation>(Navigation.class),cid); return
-	 * list; }
-	 * 
-	 * @Override public int findCount(String cid) throws Exception {
-	 * 
-	 * QueryRunner qr=new QueryRunner(DataSourceUtils.getDataSource()); String
-	 * sql="select count(*) from navigation where cid = ?";
-	 * 
-	 * Long l=(Long)qr.query(sql,new ScalarHandler(),cid); return l.intValue(); }
-	 * 
-	 * @Override public List<Essay> findEssay(String name) throws Exception {
-	 * QueryRunner qr= new QueryRunner(DataSourceUtils.getDataSource()); String
-	 * sql="SELECT * FROM essay WHERE vtest_name =?"; List<Essay> list=
-	 * qr.query(sql,new BeanListHandler<Essay>(Essay.class),name);
-	 * 
-	 * return list; }
-	 */
 
 }

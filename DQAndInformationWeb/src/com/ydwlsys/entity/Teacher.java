@@ -1,9 +1,8 @@
 package com.ydwlsys.entity;
 
 public class Teacher {
-
 	private String Name;
-	private int Id;
+	private String Id;
 	private String Zy;
 	private String Prat;
 	private String Post;
@@ -15,55 +14,60 @@ public class Teacher {
 		return Name;
 	}
 	public void setName(String name) {
-		Name = name;
-	}
-	public int getId() {
-		return Id;
-	}
-	public void setId(int id) {
-		Id = id;
+		this.Name = name;
 	}
 	public String getZy() {
 		return Zy;
 	}
 	public void setZy(String zy) {
-		Zy = zy;
+		this.Zy = zy;
+	}
+	public String getId() {
+		return Id;
+	}
+	public void setId(String id) {
+		this.Id = id;
 	}
 	public String getPrat() {
 		return Prat;
 	}
 	public void setPrat(String prat) {
-		Prat = prat;
-	}
-	public String getPost() {
-		return Post;
-	}
-	public void setPost(String post) {
-		Post = post;
+		this.Prat = prat;
 	}
 	public String getScore() {
 		return Score;
 	}
 	public void setScore(String score) {
-		Score = score;
+		this.Score = score;
+	}
+	public String getPost() {
+		return Post;
+	}
+	public void setPost(String post) {
+		this.Post = post;
 	}
 	public String getScre() {
 		return Scre;
 	}
 	public void setScre(String scre) {
-		Scre = scre;
+		this.Scre = scre;
 	}
 	public String getTr() {
 		return Tr;
 	}
 	public void setTr(String tr) {
-		Tr = tr;
+		this.Tr = tr;
 	}
 	public String getImage() {
 		return Image;
 	}
 	public void setImage(String image) {
-		Image = image;
+		this.Image = image;
+	}
+	@Override
+	public String toString() {
+		return "Teacher [Name=" + Name + ", Id=" + Id + ", Zy=" + Zy + ", Prat=" + Prat + ", Post=" + Post + ", Score="
+				+ Score + ", Scre=" + Scre + ", Tr=" + Tr + ", Image=" + Image + "]";
 	}
 	
 }
