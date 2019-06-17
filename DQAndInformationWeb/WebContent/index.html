@@ -25,49 +25,49 @@
 		-->
 	<!----font-Awesome----->
 
-	<link rel="stylesheet" href="fonts/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css" />
 
-		<!----font-Awesome----->
-		<!--Animation-->
-		<!--
+	<!----font-Awesome----->
+	<!--Animation-->
+	<!--
 			<script src="js/wow.min.js"></script>
 			-->
-		<link href="css/animate.css" rel='stylesheet' type='text/css' />
-		<!--
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<!--
 			<script>
 				new WOW().init();
 			</script>
 		-->
-		
-		<script type="text/javascript">
 
-function jiaoXueMingShi(){
-	alert("开始用ajax请求后台！");
-	$.ajax({
-        type:"post",
-        url:"http://localhost:8080/DQAndInformationWeb/TeacherServlet",
-        dataType:"json",
-        success:function(result){
-		var data = JSON.parse(result).teacher;
-		alert(result.teacher.name);
-		alert(result.name);
-		alert(teacher.name);
-		alert(result);
-		alert(data.name);
-        },
-        error:function(){
-           alert("发生错误：");
-        }
-	});
-}
-</script>
+	<script type="text/javascript">
+		function jiaoXueMingShi() {
+			alert("开始用ajax请求后台！");
+			$
+					.ajax({
+						type : "post",
+						url : "http://localhost:8080/DQAndInformationWeb/TeacherServlet",
+						dataType : "json",
+						success : function(result) {
+							var data = JSON.parse(result).teacher;
+							alert(result.teacher.name);
+							alert(result.name);
+							alert(teacher.name);
+							alert(result);
+							alert(data.name);
+						},
+						error : function() {
+							alert("发生错误：");
+						}
+					});
+		}
+	</script>
 </head>
 <body>
 	<div class="header wow fadeInUpBig" data-wow-delay="0.4s">
 		<div class="container">
 			<div class="header_top">
-				<h1>Welcome</h1>
-				<h2>to our education</h2>
+				<h1>Welcome to</h1>
+				<h2>DQAndInformation</h2>
 			</div>
 		</div>
 	</div>
@@ -85,7 +85,7 @@ function jiaoXueMingShi(){
 					<li><a href="#">教育教学</a></li>
 					<li><a href="#">科教研究</a></li>
 					<li><a href="#">学团工作</a></li>
-					<li><a href="#">党政思建</a></li>
+					<li><a href="dangzheng/dangzheng.html">党政思建</a></li>
 				</ul>
 				<!-- script-nav -->
 				<script>
@@ -262,7 +262,8 @@ function jiaoXueMingShi(){
 					<p>Claritas est etiam processus dynamicus, qui sequitur
 						mutationem consuetudium lectorum.</p>
 					<div class="more">
-						<a href="professionalIntrocducion.html"><img src="images/more.png" alt=""></a>
+						<a href="professionalIntrocducion.html"><img
+							src="images/more.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -284,7 +285,9 @@ function jiaoXueMingShi(){
 					<p>Claritas est etiam processus dynamicus, qui sequitur
 						mutationem consuetudium lectorum.</p>
 					<div class="more">
-						<a href="http://localhost:8080/DQAndInformationWeb/zs?method=findBycid&cid=1"><img src="images/more.png" alt=""></a>
+						<a
+							href="http://localhost:8080/DQAndInformationWeb/zs?method=findBycid&cid=1"><img
+							src="images/more.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -338,7 +341,8 @@ function jiaoXueMingShi(){
 						</ul>
 					</div>
 					<div class="w3ls_order">
-						<a class="popup-with-zoom-anim" href="teacher/zaizhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
+						<a class="popup-with-zoom-anim"
+							href="teacher/zaizhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 				<!-- 			
@@ -358,11 +362,14 @@ function jiaoXueMingShi(){
 							<li>职称：学生
 								<li>职务：贾总
 									<li>主学课程：java、javascript、MySQL、h5、css、js、jQuery、bootstrap等
+
+
 								
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order1">
-						<a class="popup-with-zoom-anim" href="teacher/rencaijihua/zaiZhiJiaoShi.html">查看更多</a>
+						<a class="popup-with-zoom-anim"
+							href="teacher/rencaijihua/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 
@@ -386,7 +393,8 @@ function jiaoXueMingShi(){
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order2">
-						<a class="popup-with-zoom-anim" href="" onclick="jiaoXueMingShi();">查看更多</a>
+						<a class="popup-with-zoom-anim" href=""
+							onclick="jiaoXueMingShi();">查看更多</a>
 					</div>
 				</div>
 
@@ -410,7 +418,8 @@ function jiaoXueMingShi(){
 						</ul>
 					</div>
 					<div class="w3ls_order w3ls_order3">
-						<a class="popup-with-zoom-anim" href="teacher/jianzhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
+						<a class="popup-with-zoom-anim"
+							href="teacher/jianzhijiaoshi/zaiZhiJiaoShi.html">查看更多</a>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -446,7 +455,17 @@ function jiaoXueMingShi(){
 						<li><a href="#">功能待定</a></li>
 					</ul>
 				</div>
-
+				<div class="col-sm-3">
+					<ul class="socials">
+						<li><a href="#"><i class="fa fb fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa tw fa-twitter"></i></a></li>
+					</ul>
+					<ul class="list2">
+						<li><strong class="phone">0432-63509888</strong><br><small>Mon
+									- Fri / 8.00AM - 04.30PM</small></li>
+						<li>Questions? <a href="#">www.DQAndInformation.com</a></li>
+					</ul>
+				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
