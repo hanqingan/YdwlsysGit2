@@ -48,7 +48,7 @@ public class zsServlet extends HttpServlet {
 				System.out.println(essay.toString());
 			}
 			request.setAttribute("list", list);
-			request.getRequestDispatcher("Essay.jsp").forward(request, response);
+			request.getRequestDispatcher("zsjyEssay.jsp").forward(request, response);
 			// System.out.println(name);
 		} catch (Exception e) {
 
@@ -75,7 +75,7 @@ public class zsServlet extends HttpServlet {
 
 			request.setAttribute("list", list);
 			request.setAttribute("list1", list1);
-			request.getRequestDispatcher("about.jsp").forward(request, response);
+			request.getRequestDispatcher("zsjy.jsp").forward(request, response);
 		} catch (Exception e) {
 
 			e.printStackTrace();

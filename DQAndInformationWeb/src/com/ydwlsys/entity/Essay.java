@@ -1,16 +1,10 @@
 package com.ydwlsys.entity;
 
 public class Essay {
-private String vtest_id;
+private String vtest_name;
 private String ctitle;
 private String cessay;
 private String cimage;
-public String getVtest_id() {
-	return vtest_id;
-}
-public void setVtest_id(String vtest_id) {
-	this.vtest_id = vtest_id;
-}
 public String getCtitle() {
 	return ctitle;
 }
@@ -32,8 +26,14 @@ public void setCimage(String cimage) {
 }
 @Override
 public String toString() {
-	return "Essay [vtest_id=" + vtest_id + ", ctitle=" + ctitle + ", cessay="
+	return "Essay [vtest_name=" + vtest_name + ", ctitle=" + ctitle + ", cessay="
 			+ cessay + ", cimage=" + cimage + "]";
+}
+public String getVtest_name() {
+	return vtest_name;
+}
+public void setVtest_name(String vtest_name) {
+	this.vtest_name = vtest_name;
 }
 
 }
