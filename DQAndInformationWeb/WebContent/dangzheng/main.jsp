@@ -5,9 +5,9 @@
 
 <html>
 
-<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.js"></script>
-		<link rel="stylesheet" href="../css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>党建思政</title>
@@ -46,20 +46,20 @@
 		</style>
 </head>
 <body>
-<div class="container-fluid">
+	<div class="container-fluid">
 			<div class="row dao1">
-				<div class="col-lg-1" style="background-color: red; height: 80px; padding-top: 20px;margin-left: 120px;"><a href="#">首页</a></div>
-				<div id="1" class="col-lg-2 dao1" style="margin-left: 100px;" ><a  onmousemove="on()" onmouseout="out()" href="index.html" class="active">党建思政</a></div>
-				<div id="2" class="col-lg-1 dao1 "><a  onmousemove="on1()" onmouseout="out1()" href="info?flag=dt&part=dt">党建动态</a></div>
-				<div id="3" class="col-lg-1 dao1"><a  onmousemove="on2()" onmouseout="out2()" href="info?flag=number">组织结构</a></div>
-				<div id="4" class="col-lg-1 dao1"><a  onmousemove="on3()" onmouseout="out3()" href="info?flag=dt&part=xx">理论学习</a></div>
-				<div id="5" class="col-lg-1 dao1"><a  onmousemove="on4()" onmouseout="out4()" href="info?flag=dt&part=fj">共青妇建</a></div>
-				<div id="6" class="col-lg-1 dao1 "><a  onmousemove="on5()" onmouseout="out5()" href="info?flag=dt&part=dt">资料下载</a></div>
+				<div class="col-lg-1" style="background-color: red; height: 80px; padding-top: 20px;margin-left: 120px;"><a href="index.html">首页</a></div>
+				<div id="1" class="col-lg-2 dao1" style="margin-left: 100px;" ><a  onmousemove="on()" onmouseout="out()" href="dangzheng/dangzheng.html" action="post">党建思政</a></div>
+				<div id="2" class="col-lg-1 dao1 "><a onmousemove="on1()" onmouseout="out1()" href="InfoServlet?flag=dt&part=dt" action="post">党建动态</a></div>
+				<div id="3" class="col-lg-1 dao1"><a onmousemove="on2()" onmouseout="out2()" href="InfoServlet?flag=number" action="post" >组织结构</a></div>
+				<div id="4" class="col-lg-1 dao1"><a onmousemove="on3()" onmouseout="out3()" href="InfoServlet?flag=dt&part=xx" action="post" >理论学习</a></div>
+				<div id="5" class="col-lg-1 dao1"><a onmousemove="on4()" onmouseout="out4()" href="InfoServlet?flag=dt&part=fj" action="post" >共青妇建</a></div>
+				<div id="6" class="col-lg-1 dao1 "><a onmousemove="on5()" onmouseout="out5()" href="InfoServlet?flag=dt&part=dt" action="post">资料下载</a></div>
 			</div>
 			
-		</div>	
-		<div style="margin-top: 0px; height:400px; text-align: center; ">
-			<img src="../images/dangzheng/dang.png" style="height: 400px;width: 95%; margin: 0 20px 0 1px;"/>
+	</div>	
+		<div style="margin-top: 0px; height:400px; text-align: center; " align="center">
+			<img src="images/dangzheng/dang.png" style="height: 400px;width: 95%; margin: 0 20px 0 1px;"/>
 		</div>
 		<!-- footer -->
 		
@@ -83,7 +83,7 @@
 			<div class="container">
 				<div class="footer_top">
 					<div class="col-sm-3" style="padding-top: 30px;">
-							<div style="height: 150px; width: 150px; border-radius: 100px;"><img src="../images/yuanhui.png"></div>
+							<div style="height: 150px; width: 150px; border-radius: 100px;"><img src="images/yuanhui.png"></div>
 					</div>
 					<div class="col-sm-3" style="padding-top: 30px;">
 						<ul class="list1">

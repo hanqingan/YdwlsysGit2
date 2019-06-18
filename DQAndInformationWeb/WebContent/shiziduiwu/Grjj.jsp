@@ -1,18 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@ page language="java" contentType="text/html; charset=utf-8" 
+	pageEncoding="utf-8"%>
+		<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-		<meta http-equiv="Content-Type" content="text/html;" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>个人简介</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="../js/jquery-1.11.1.min.js"></script>
 		<script src="../js/bootstrap.js" ></script>
 		<!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-		<link href="css/style_2.css" rel="stylesheet" type="text/css" />
+		<link href="../css/style.css" rel='stylesheet' type='text/css' />
 		<!-- Custom Theme files -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript" >
@@ -29,8 +28,8 @@
 		<!-- <link rel="stylesheet" href="fonts/css/font-awesome.min.css"> -->
 		<!----font-Awesome----->
 		<!--Animation-->
-		<script src="js/wow.min.js" charset="utf-8"></script>
-		<link href="css/animate.css" rel='stylesheet' type='text/css' charset="utf-8"/>
+		<script src="../js/wow.min.js"></script>
+		<link href="../css/animate.css" rel='stylesheet' type='text/css'/>
 		<script>
 			new WOW().init();
 		</script>
@@ -48,11 +47,11 @@
 				<div class="top-nav">
 					<span class="menu"> </span>
 					<ul>
-						<li><a href="index.html">学院概况</a></li>
-						<li class="active"><a href="">教育教学</a></li>
-						<li class="active"><a href="">科教研究</a></li>
-						<li><a href="">学团工作</a></li>
-						<li><a href="">党政思建</a></li>
+						<li class="active"><a href="#">学院概况</a></li>
+						<li><a href="#">教育教学</a></li>
+						<li><a href="#">科教研究</a></li>
+						<li><a href="#">学团工作</a></li>
+						<li><a href="../../dangzheng/dangzheng.html">党政思建</a></li>
 					</ul>
 					<!-- script-nav -->
 					<script>
@@ -63,19 +62,20 @@
 					<!-- //script-nav -->
 				</div>
 				<div class="clearfix"> </div>
-				<div class="fixed-header">
-				<div class="logo">
+			</div>
+			<div class="fixed-header">
+				<div class="logo" style="width:375.65px;">
 					<a href="index.html">
-						<span class="secondary">吉林农业科技学院，电气与信息工程学院</span>
-						<span class="main">师资队伍</span>
+						<span class="secondary">电气与信息工程学院</span>
+						<span class="main" style="font-size:40px">师资队伍</span>
 					</a>
 				</div>
 				<div class="top-nav">
 					<span class="menu"> </span>
 					<ul>
-						<li><a href="index.html">首页</a></li>
-						<li class="active"><a href="zaizhijiaoshi.html">在职教师</a></li>
-						<li class="active"><a href="zaizhijiaoshi.html">按拼音排序</a></li>
+						<li class="active"><a href="../../index.html">首页</a></li>
+						<li><a href="zaizhijiaoshi.html">在职教师</a></li>
+						<li><a href="zaizhijiaoshi.html">按拼音排序</a></li>
 						<li><a href="zzjszy.html">按专业排序</a></li>
 						<li><a href="zzjszc.html">按职称排序</a></li>
 					</ul>
@@ -90,11 +90,10 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<div>
 <c:forEach items="${list}" var="t">
 						<div class="w3l_main_grid_top w3l_main_grid_top1">
-						${t.getImage()}
-					</div>
+						<img alt="" src="${pageContext.request.contextPath}/${t.getImage()}">
+						</div>
 						<div class="w3ls_order w3ls_order2">
 										${t.getName()}
 									</div>

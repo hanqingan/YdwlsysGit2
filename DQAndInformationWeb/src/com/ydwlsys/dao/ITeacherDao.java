@@ -7,16 +7,12 @@ import com.ydwlsys.entity.Teacher;
 
 public interface ITeacherDao {
 
-	public int insert();
-
-	public int delete();
-
-	public int update();
-
-	public Teacher queryByName();
+	public Teacher queryById(String Id);
 
 	public Teacher queryById();
 
 	public List<Teacher> queryALL();
+	
+	public List<Teacher> Cx(String cid) throws SQLException;
 
 }

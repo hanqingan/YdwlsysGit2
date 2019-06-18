@@ -16,4 +16,13 @@
 		<servlet-name>TeacherServlet</servlet-name>
 		<url-pattern>/TeacherServlet</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InfoServlet</servlet-name>
+		<servlet-class>com.ydwlsys.servlet.InfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InfoServlet</servlet-name>
+		<url-pattern>/InfoServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
