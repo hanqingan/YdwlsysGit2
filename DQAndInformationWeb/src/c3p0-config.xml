@@ -3,7 +3,7 @@
 	<default-config>
 		<!-- 基本配置 -->
 		<property name="driverClass">com.mysql.jdbc.Driver</property>
-		<property name="jdbcUrl">jdbc:mysql://localhost:3306/dqandinformationdb</property>
+		<property name="jdbcUrl">jdbc:mysql://152.136.104.61:3306/dqandinformationdb</property>
 		<property name="user">root</property>
 		<property name="password">root123</property>
 	
