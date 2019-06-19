@@ -1,0 +1,70 @@
+package ll.io.inputstream;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Text3 {
+	
+	public void copyRWText(String str1,String str2){
+		File file1=new File(str1);
+		File file2=new File(str2);
+		
+		FileReader reader=null;
+		FileWriter writer=null;
+
+		try {
+			file2.createNewFile();
+			reader=new FileReader(file1);
+			writer=new FileWriter(file2);
+			
+			char[] buf=new char[1024];
+			int result=0;
+			
+			while((result=reader.read(buf))!=-1){
+				writer.write(buf, 0, result);
+			}
+			
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} finally{
+			if(reader!=null){
+				try {
+					reader.close();
+				} catch (IOException e) {
+					// TODO 自动生成的 catch 块
+					e.printStackTrace();
+				}
+			}
+			
+			if(writer!=null){
+				try {
+					writer.close();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO 自动生成的 catch 块
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	 
+	public static void main(String arge[]){
+		Text3 text3=new Text3();
+		text3.copyRWText("E:\\11.txt","d:\\11.txt");
+		System.out.println("复制成功");
+	}
+
+
+chrome://flags/#autoplay-policy
+
+
+
+chrome://flags/#autoplay-policy
+	
+}

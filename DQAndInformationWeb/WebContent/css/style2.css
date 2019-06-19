@@ -1,0 +1,19 @@
+.content_smalltitle {
+    font-size: 14px;
+    font-weight: normal;
+}
+.small_tittle{
+	text-align: center;
+	border-bottom: 1px dotted #0aa6d6;
+}
+.large_tittle{
+	height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.content{
+	margin-top: 20px;
+	line-height: 2em;  /* 行间距（应该是2倍行间距的意思） */
+	text-indent: 2em; /* 首行缩进2个字 */
+}

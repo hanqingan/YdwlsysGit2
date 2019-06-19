@@ -10,7 +10,7 @@ h3 {
 	margin-top: 0;
 }
 .t1{
-	width: 80%;
+	width: 70%;
 	text-align: center;
 	height: 20px;
 	background-color: #0000FF;
@@ -77,7 +77,7 @@ body a {
 }
 
 /*-- main --*/
-/* 过渡效果 */
+/* 杩囨浮鏁堟灉 */
 .agile_copy_right p a,
 .w3ls_order a,
 input[type="submit"] {
@@ -93,14 +93,13 @@ input[type="submit"] {
 	margin: 4px auto;
 	padding-top: 20px;
 }
-
 .main h1 {
 	font-size: 2.7em;
 	color: #fff;
 	text-align: center;
 	margin-bottom: 1px;
 }
-/* 最下面的 */
+/* 鏈�涓嬮潰鐨� */
 .agile_copy_right {
 	margin: 5em 0 0;
 }
@@ -122,23 +121,23 @@ input[type="submit"] {
 	text-decoration: none;
 }
 
-/* 主体 */
+/* 涓讳綋 */
 .w3l_main_grids{
 	padding-top: 50px;
 }
 
 .w3l_main_grid {
 	float: left;
-	width: 300px;
+	width: 260px;
 	text-align: center;
 	background: #fff;
 }
-/* 顶部栏 */
+/* 椤堕儴鏍� */
 .w3l_main_grid_top {
 	padding: 15px;
 	background: #f5f5f5;
 }
-/* 顶部字体 */
+/* 椤堕儴瀛椾綋 */
 .w3l_main_grid_top h3 {
 	font-size: 15px;
 	color: #212121;
@@ -217,7 +216,7 @@ input[type="submit"] {
 .w3l_main_grid:nth-child(4) {
 	margin: 0 1em;
 }
-/* 第二个 */
+/* 绗簩涓� */
 
 .w3l_main_grid_top1 h3 span {
 	color: #e832a9;
@@ -230,7 +229,7 @@ input[type="submit"] {
 .w3ls_order1 a {
 	background: #e832a9;
 }
-/* 第三个 */
+/* 绗笁涓� */
 .w3l_main_grid_top2 h3 span {
 	color: #e8d032;
 }
@@ -243,7 +242,7 @@ input[type="submit"] {
 	background: #e8d032;
 }
 
-/* 第四个 */
+/* 绗洓涓� */
 .w3l_main_grid_top3 h3 span {
 	color: blue;
 }

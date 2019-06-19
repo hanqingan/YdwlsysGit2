@@ -1,0 +1,4 @@
+chrome://flags/#autoplay-policy
+
+½«Default»»³ÉNo user gesture is required
+
