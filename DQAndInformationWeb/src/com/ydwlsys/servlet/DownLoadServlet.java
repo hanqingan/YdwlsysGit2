@@ -32,7 +32,7 @@ public class DownLoadServlet extends HttpServlet {
 		list=char1.getAllFile();
 //		System.out.println(list.size());
 		req.setAttribute("list", list);
-		req.getRequestDispatcher("/downLoad.jsp").forward(req, resp);
+		req.getRequestDispatcher("/jiaoyujiaoxue/downLoad.jsp").forward(req, resp);
 
 	}
 }

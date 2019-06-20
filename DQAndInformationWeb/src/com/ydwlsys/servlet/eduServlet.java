@@ -32,7 +32,7 @@ public class eduServlet extends HttpServlet{
 		List<TeaDy> list=new ArrayList<TeaDy>();
 		list=char1.getAllTeaDy();
 		req.setAttribute("list", list);
-		req.getRequestDispatcher("/teaDy.jsp").forward(req, resp);
+		req.getRequestDispatcher("/jiaoyujiaoxue/teaDy.jsp").forward(req, resp);
 	}
 	
 }

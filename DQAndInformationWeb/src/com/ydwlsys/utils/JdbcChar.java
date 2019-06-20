@@ -6,16 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import com.ydwlsys.entity.File;
 import com.ydwlsys.entity.TeaDy;
 
 public class JdbcChar {
-	String url="jdbc:mysql://localhost:3306/test";
+	String url="jdbc:mysql://152.136.111.100:3306/test";
 	String userName="root";
-	String passWord="123456";
+	String passWord="root123";
 	
 	public Connection getConn(String url,String userName,String passWord){
 		Connection conn=null;

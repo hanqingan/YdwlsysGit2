@@ -6,48 +6,48 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>教学动态</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/style1.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
 </head>
 <body>
 		<div id="hearder2" class="clearfix">
 			<div class="logo">
+				<img src="images/jiaoyujiaoxue/logo1.png">
 			</div>
-			<div class="logo-name">电气与信息工程学院</div>
-		</div>	
+		</div>
 		<div id="menu-box" class="clearfix">
 			<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="#">学院概况</a></li>
-				<li><a href="#">专业介绍</a></li>
-				<li><a href="#">师资队伍</a></li>
-				<li><a href="list-text.html">教育教学</a></li>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="index.html">学院概况</a></li>
+				<li><a href="professionalIntrocducion.html">专业介绍</a></li>
+				<li><a href="shiziduiwu/zaizhijiaoshi/zaizhijiaoshi.html">师资队伍</a></li>
+				<li><a href="jiaoyujiaoxue/edu.html">教育教学</a></li>
 				<li><a href="#">科教研究</a></li>
 				<li><a href="#">学团工作</a></li>
-				<li><a href="#">党建思政</a></li>
-				<li><a href="#">招生就业</a></li>
+				<li><a href="dangzheng/dangzheng.html">党建思政</a></li>
+				<li><a href="zs?method=findBycid&cid=1">招生就业</a></li>
 
 			</ul>
 		</div>
-		<div id="slider-box" style="background:url(images/slider4.jpg) center center;"></div>
+		<div id="slider-box" style="background:url(images/jiaoyujiaoxue/slider4.png) center center;"></div>
 		<!-- detail -->
 		<div id="detail2-box" class="clearfix">
-			<div class="tit-80"><a href="list-text1.html">教学动态</a> - 查看详情</div>
+			<div class="tit-80">教育教学 - 查看详情</div>
 			<div class="tabula-box">
 				<div class="max-tit">教育教学</div>
 				<ul>
-					<li><a href="#">本科生教育</a></li>
 					<li><a href="http://152.136.104.61:8080/DQAndInformationWeb/professionalIntrocducion.html">&emsp;&emsp;专业介绍</a></li>
-					<li><a href="trainProgram.jsp">&emsp;&emsp;培养方案</a></li>
-					<li><a href="speTrainProgram.jsp">&emsp;&emsp;特色培养项目</a></li>
+					<li><a href="jiaoyujiaoxue/trainProgram.jsp">&emsp;&emsp;培养方案</a></li>
+					<li><a href="jiaoyujiaoxue/speTrainProgram.jsp">&emsp;&emsp;特色培养项目</a></li>
 					<li><a href="#">专科生教育</a></li>
 					<li><a href="http://152.136.104.61:8080/DQAndInformationWeb/professionalIntrocducion.html">&emsp;&emsp;专业介绍</a></li>
-					<li><a href="trainProgram.jsp">&emsp;&emsp;培养方案</a></li>
-					<li><a href="speTrainProgram.jsp">&emsp;&emsp;特色培养项目</a></li>
-					<li><a href="list_text">教学动态</a></li>
-					<li><a href="courseBuild.jsp">课程建设</a></li>
-					<li><a href="laborBuild.jsp">实验室建设</a></li>
-					<li><a href="aa">资料下载</a></li>
+					<li><a href="jiaoyujiaoxue/trainProgram.jsp">&emsp;&emsp;培养方案</a></li>
+					<li><a href="jiaoyujiaoxue/speTrainProgram.jsp">&emsp;&emsp;特色培养项目</a></li>
+					<li><a href="/DQAndInformationWeb/list_text">教学动态</a></li>
+					<li><a href="jiaoyujiaoxue/courseBuild.jsp">课程建设</a></li>
+					<li><a href="jiaoyujiaoxue/laborBuild.jsp">实验室建设</a></li>
+					<li><a href="/DQAndInformationWeb/aa">资料下载</a></li>
 				</ul>
 			</div>
 
@@ -64,9 +64,9 @@
 				
 				</p>
 			
-				<p style="text-align: center"><img src="images/content1_1.png" width="650" /></p>
+		<!--  	<p style="text-align: center"><img src="images/content1_1.png" width="650" /></p>
 				<br/><p style="text-align: center"><img src="images/content1_2.png" width="650" /></p>
-
+-->	
 				</div>
 			</div>
 		</div>

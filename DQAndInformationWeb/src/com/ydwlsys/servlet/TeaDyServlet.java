@@ -35,7 +35,7 @@ public class TeaDyServlet extends HttpServlet{
 		list=ch.getTeaDyByName(name);
 		
 		req.setAttribute("list", list);
-		req.getRequestDispatcher("/teaDyResult.jsp").forward(req, resp);
+		req.getRequestDispatcher("/jiaoyujiaoxue/teaDyResult.jsp").forward(req, resp);
 //		req.getRequestDispatcher("/ppp.jsp").forward(req, resp);
 		
 	}
