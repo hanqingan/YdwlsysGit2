@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class JDBCUtils {
 
 	private static String driverName = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://152.136.104.61:3306/dqandinformationdb";
+	private static String url = "jdbc:mysql://152.136.111.100:3306/DQAndInformationdb";
 	private static String username = "root";
 	private static String password = "root123";
 

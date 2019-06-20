@@ -12,7 +12,7 @@ import java.util.List;
 import com.ydwlsys.entity.Leadership;
 
 public class LeadershipJDBC {
-	String url="jdbc:mysql://localhost:3306/DQAndInformationdb";
+	String url="jdbc:mysql://152.136.111.100:3306/DQAndInformationdb";
 	String userName="root";
 	String passWord="root123";
 	

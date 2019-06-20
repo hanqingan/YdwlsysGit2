@@ -12,7 +12,7 @@ import com.ydwlsys.entity.File;
 import com.ydwlsys.entity.TeaDy;
 
 public class JdbcChar {
-	String url="jdbc:mysql://152.136.111.100:3306/test";
+	String url="jdbc:mysql://152.136.111.100:3306/DQAndInformationdb";
 	String userName="root";
 	String passWord="root123";
 	
