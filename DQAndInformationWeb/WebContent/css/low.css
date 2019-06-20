@@ -1,0 +1,36 @@
+*{list-style: none;outline: none;}
+body{font-family:;text-align: center;}
+a{
+	text-indent: 1 em;
+	display: inline-block;
+	font-size: 22px;
+	color: #5E2D00;
+}
+a:nth-child(1){text-indent: 0;}
+a:link,a:visited{text-decoration: none;}
+a:hover{
+	text-decoration: underline;
+	color: #f03;
+}
+dl{display: none;
+
+}
+dd{
+	line-height: 38px;
+	font-size: 22px;
+	font-family: ;
+	color:#333;
+}
+dd:before{content: url(images/.png);}
+dd:nth-child(odd){color:  #5E2D00;}
+dd:nth-child(2) em{
+	color: #f03;
+	font-weight: bold;
+	font-style: normal;
+}
+dd:nth-child(3) em{
+	color: #5E2D00;
+	font-weight: bold;
+	font-style: normal;
+}
+:target{display: block;}
