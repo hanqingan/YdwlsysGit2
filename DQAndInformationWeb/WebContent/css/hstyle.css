@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2013 Daniel Eden
+*/
+
+.mulu {
+	position: absolute;
+	top: 130%;
+	width: 30%;
+	height:20rem;
+	left: 18%;
+	border-color: #AFD9EE;
+	transform: rotate(25deg);
+
+}
+
+.m {
+	position: absolute;
+	top: 130%;
+	width: 30%;
+	height: 20rem;
+	left: 60%;
+	border-color: #AFD9EE;
+	transform: rotate(-25deg);
+
+}
+
+.mu {
+	position: absolute;
+	top: 180%;
+	width: 30%;
+	height: 20rem;
+	left: 16%;
+	border: #00AEEF;
+	transform: rotate(-15deg);
+
+}
+.s  td{
+	font-size: 20px;
+	
+	color: white;
+	
+}
+
+.muluu {
+	position: absolute;
+	top: 180%;
+	width: 30%;
+	height: 20rem;
+	left: 60%;
+	/* background-color: #C9302C; */
+	border-color: #AFD9EE;
+	transform: rotate(15deg);
+
+}
+
+/*.yuan {
+	position: absolute;
+	top: 132%;
+	width: 20%;
+	height: 25rem;
+	left: 47%;
+	background-color: #67B168;
+	 transform: rotate(15deg); 
+	border-radius: 50%;
+	border-width: 20px;
+}*/
+
+
+.li h1 a {
+	color: white;
+}
+
+.li li {
+	color: white;
+}
+
+.li {
+	background-color: #22A63B;
+	width: 12%;
+	position: absolute;
+}
+
+.li h4 a {
+	color: white;
+
+}
+
+.tab {
+
+	position: absolute;
+	background-color: #22A63B;
+	left: 20%;
+	height: 85%;
+	width: 75%;
+	top: 87%;
+}
+
+.img {
+
+	position: absolute;
+	/* background-color: #BCE8F1; */
+	left:17% ;
+	width: 80%;
+	height: 29%;
+	top: 51%;
+	background-image: url(../images/3.jpg);
+	background-size: 100% 100%;
+}
+.img2 {
+
+	position: absolute;
+	/* background-color: #BCE8F1; */
+	left:17% ;
+	width: 80%;
+	height: 29%;
+	top: 51%;
+	background-image: url(../images/4.jpg);
+	background-size: 100% 100%;
+}
+.img3 {
+
+	position: absolute;
+	/* background-color: #BCE8F1; */
+	left:17% ;
+	width: 80%;
+	height: 29%;
+	top: 51%;
+	background-image: url(../images/5.jpg);
+	background-size: 100% 100%;
+}
+.img4 {
+
+	position: absolute;
+	/* background-color: #BCE8F1; */
+	left:17% ;
+	width: 80%;
+	height: 29%;
+	top: 51%;
+	background-image: url(../images/6.jpg);
+	background-size: 100% 100%;
+}
+.img5 {
+
+	position: absolute;
+	/* background-color: #BCE8F1; */
+	left:17% ;
+	width: 80%;
+	height: 29%;
+	top: 51%;
+	background-image: url(../images/7.jpg);
+	background-size: 100% 100%;
+}
+

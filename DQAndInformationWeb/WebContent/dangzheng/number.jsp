@@ -25,42 +25,39 @@
 			}
 			
 			.dao1{
-				height: 80px;
-				width: 150px;
-				 text-align: center; 
-				 padding-top: 20px;
-				 display: inline;
-				 padding-left: 2px;
-				 font-size: 22px;
-				 color: #000000;
-				border-bottom: solid  whitesmoke  2px;
-				
+				width: 100px; 
+				height: 50px; 
+				float: left;
+				margin-top: 5px;
+				align="center";
+				padding-top: 10px;
+				margin-left: 30px;
+				font-size: 22px;
 			}
 			.footer_top{
 				line-height: 30px;
 				padding-top: 10px;
 				font-family: "微软雅黑";
 			}
-			li{
+			li{S
 				outline-style: none;
 			}
 		</style>
 </head>
 <body>
-<div class="container-fluid">
-			<div class="row dao1">
-				<div class="col-lg-1" style="background-color: red; height: 80px; padding-top: 20px;margin-left: 120px;"><a href="index.html">首页</a></div>
-				<div id="1" class="col-lg-2 dao1" style="margin-left: 100px;" ><a  onmousemove="on()" onmouseout="out()" href="dangzheng/dangzheng.html" class="active">党建思政</a></div>
-				<div id="2" class="col-lg-1 dao1 "><a  onmousemove="on1()" onmouseout="out1()" href="info?flag=dt&part=dt">党建动态</a></div>
-				<div id="3" class="col-lg-1 dao1"><a  onmousemove="on2()" onmouseout="out2()" href="info?flag=number">组织结构</a></div>
-				<div id="4" class="col-lg-1 dao1"><a  onmousemove="on3()" onmouseout="out3()" href="info?flag=dt&part=xx">理论学习</a></div>
-				<div id="5" class="col-lg-1 dao1"><a  onmousemove="on4()" onmouseout="out4()" href="info?flag=dt&part=fj">共青妇建</a></div>
-				<div id="6" class="col-lg-1 dao1 "><a  onmousemove="on5()" onmouseout="out5()" href="info?flag=dt&part=dt">资料下载</a></div>
-			</div>
-			
-		</div>	
-		<div style="margin-top: 0px; height:400px; text-align: center; ">
-			<img src="images/dangzheng/dang.png" style="height: 400px;width: 95%; margin: 0 20px 0 1px;"/>
+		<div class="container-fluid" align="center"  style="display:table;width:auto; margin-top: 5px;">
+			<div  style="width: 100px; height: 50px;  float: left; margin-top:5px; padding-top: 10px; font-size: 22px; background-color: red;margin-rigth: 40px;" align="center"><a href="index.html">首页</a></div>	
+			<div class="dao1" id="1"><a  onmousemove="on()" onmouseout="out()" href="dangzheng/dangzheng.html" action="post">党建思政</a></div>
+			<div class="dao1" id="2" ><a onmousemove="on1()" onmouseout="out1()" href="InfoServlet?flag=dt&part=dt" action="post">党建动态</a></div>
+			<div  class="dao1" id="3" ><a onmousemove="on2()" onmouseout="out2()" href="InfoServlet?flag=number" action="post" >组织结构</a></div>
+			<div  class="dao1" id="4" ><a onmousemove="on3()" onmouseout="out3()" href="InfoServlet?flag=dt&part=xx" action="post" >理论学习</a></div>
+			<div  class="dao1" id="5" ><a onmousemove="on4()" onmouseout="out4()" href="InfoServlet?flag=dt&part=fj" action="post" >工青妇建</a></div>
+			<div  class="dao1" id="6" ><a onmousemove="on5()" onmouseout="out5()" href="dangzheng/load.jsp" >资料下载</a></div>
+			<br><br><br><br>
+		</div>
+		<div  align="center" style=" width="1000px"; position: fixed;">
+		
+			<img src="images/dangzheng/dang.png"  style=" width="1000px";" />
 		</div>
 		<!-- footer -->
 		
@@ -71,11 +68,11 @@
 		<div align="center">
 			
 			<!-- z组织结构 -->
-			<div  style="width: 60%;">
+			<div  style="width: 30%;">
 			
 			<h3>计算机与网络教工党支部党员名单</h3>
 			<br>
-			<c:forEach items="${listother}" var="item" varStatus="i">
+			<c:forEach items="${listother}" var="item" varStatus="i"></br>
 			
 			<tr>
 				<td style="width: 600px;" >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -84,11 +81,11 @@
 			</tr>
 			</c:forEach>
 			<br>
-			<h4>党员</h4>
+			<h4>党员　&nbsp;</h4>
 			<c:forEach items="${list}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px; style="overflow: hidden;white-space: nowrap;"" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></br>
 				
 				
 			</tr>
@@ -101,17 +98,17 @@
 			<c:forEach items="${listother1}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px;" >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></br>
 				
 				
 			</tr>
 			</c:forEach>
 			
-			<h4>党员</h4>
+			<h4>党员　&nbsp;</h4>
 			<c:forEach items="${list1}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></br>
 				
 				
 			</tr>
@@ -123,17 +120,17 @@
 			<c:forEach items="${list2}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px; " >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></br>
 				
 				
 			</tr>
 			</c:forEach>
 			
-			<h4>党员</h4>
+			<h4>党员　&nbsp;</h4>
 			<c:forEach items="${listother2}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></br>
 				
 				
 			</tr>
@@ -142,7 +139,7 @@
 			<br><br><br>
 			<h3>学生党支部党员名单</h3>
 			<br>
-			<c:forEach items="${listother3}" var="item" varStatus="i">
+			<c:forEach items="${listother3}" var="item" varStatus="i"></br>
 			
 			<tr>
 				<td style="width: 600px;" >${item.post}:&nbsp;&nbsp;${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -150,15 +147,25 @@
 				
 			</tr>
 			</c:forEach>
-			
-			<h4>党员</h4>
+			<%
+				int i=0;
+			%>
+			<h4>党员　&nbsp;</h4>
 			<c:forEach items="${list3}" var="item" varStatus="i">
 			
 			<tr>
-				<td style="width: 600px;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td style="width: 600px;overflow: hidden;white-space: nowrap;" >${item.nname}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				
 				
 			</tr>
+			<% 
+				 i++;
+				if(i%3==0){
+					%>
+					</br>
+					<%
+				}
+			%>
 			</c:forEach>	
 			<br><br><br>
 			
@@ -167,14 +174,14 @@
 			</div>
 							
 		</div>
-		<div style="background-color: #202020;" >
+		<div style="background-color:  #808080;" >
 			<div class="container">
 				<div class="footer_top">
 					<div class="col-sm-3" style="padding-top: 30px;">
 							<div style="height: 150px; width: 150px; border-radius: 100px;"><img src="images/yuanhui.png"></div>
 					</div>
-					<div class="col-sm-3" style="padding-top: 30px;">
-						<ul class="list1">
+					<div class="col-sm-3" style="padding-top: 5px;">
+						<ul class="list1" style="list-style-type: none;">
 							<h3>关于本站</h3>
 							<li><a href="#">网站目录</a></li>
 							<li><a href="#">版本更新</a></li>
@@ -183,16 +190,16 @@
 							
 						</ul>
 					</div>	
-					<div class="col-sm-3" style="padding-top: 30px;">
-						<ul class="list1">
+					<div class="col-sm-3" style="padding-top: 5px; ">
+						<ul class="list1" style="list-style-type: none;">
 							<h3>联系我们</h3>
 							<li><a href="#">院长信箱</a></li>
 							<li><a href="#">本科生招生</a></li>
 							<li><a href="#">专科生招生</a></li>
 						</ul>
 					</div>
-					<div class="col-sm-3" style="padding-top: 30px;">
-						<ul class="list1">
+					<div class="col-sm-3" style="padding-top: 5px;">
+						<ul class="list1" style="list-style-type: none;">
 							<h3>功能待定</h3>
 							<li><a href="#">功能待定</a></li>
 							<li><a href="#">功能待定</a></li>
@@ -204,9 +211,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="copy" style="background-color: rgb(32,32,32);">
+		<div class="copy" style="background-color: #808080;">
 			<p style="color: black;" align="center">
-				Copyright©2018-2019吉林农业科技学院电气与信息工程学院版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：吉林市吉林经济技术开发区翰林路77号&nbsp;&nbsp;邮编：132101&nbsp;&nbsp;电话：0432-63509888、63509118
+				Copyright©2018-2019吉林农业科技学院电气与信息工程学院版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：吉林市吉林经济技术开发区翰林路77号&nbsp;&nbsp;
+				邮编：132101&nbsp;&nbsp;电话：0432-63509888、63509118
 			</p>
 		</div>
 	</body>

@@ -9,17 +9,12 @@ import com.ydwlsys.service.LeadershipService;
 
 public class LeadershipServiceImpl implements LeadershipService {
 
-	LeadershipDao iDownLoad=new LeadershipDaoImpl();
+	LeadershipDao leadership=new LeadershipDaoImpl();
 
 	@Override
 	public List<Leadership> getAllFile() {
 		// TODO 自动生成的方法存根
-		return iDownLoad.getAllFile();
+		return leadership.getAllFile();
 	}
 
-	@Override
-	public Leadership getFileByName(String name) {
-		// TODO 自动生成的方法存根
-		return iDownLoad.getFileByName(name);
-	}
 }
