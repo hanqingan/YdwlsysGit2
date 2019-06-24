@@ -13,25 +13,24 @@ import javax.servlet.http.HttpServletResponse;
 import com.ydwlsys.entity.Leadership;
 import com.ydwlsys.service.LeadershipService;
 import com.ydwlsys.service.impl.LeadershipServiceImpl;
-@WebServlet("/LeadershipServlet")
+
+@WebServlet(urlPatterns = "/LeadershipServlet", asyncSupported = true)
 public class LeadershipServlet extends HttpServlet {
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO 自动生成的方法存根
 		doPost(req, resp);
 	}
-	
+
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO 自动生成的方法存根
-		
-		LeadershipService leader=new LeadershipServiceImpl();  
-		List<Leadership> list=new ArrayList<Leadership>();
+
+		LeadershipService leader = new LeadershipServiceImpl();
+		List<Leadership> list = new ArrayList<Leadership>();
 		try {
-			list=leader.getAllFile();
+			list = leader.getAllFile();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
