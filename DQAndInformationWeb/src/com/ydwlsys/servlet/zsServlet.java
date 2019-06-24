@@ -17,7 +17,7 @@ import com.ydwlsys.service.impl.zsServiceImpl;
 /**
  * Servlet implementation class zsServlet
  */
-@WebServlet("/zs")
+@WebServlet(urlPatterns="/zs",asyncSupported=true)
 public class zsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

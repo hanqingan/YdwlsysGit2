@@ -17,8 +17,8 @@ import com.ydwlsys.entity.Professional;
 import com.ydwlsys.service.IProfessionalService;
 import com.ydwlsys.service.impl.ProfessionalServiceImpl;
 
-@WebServlet("/ProfesssionalServelet")
-public class ProfesssionalServelet extends HttpServlet {
+@WebServlet("/ProfessionalServlet")
+public class ProfessionalServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

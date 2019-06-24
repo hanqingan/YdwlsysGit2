@@ -9,7 +9,7 @@
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
@@ -37,12 +37,12 @@
 				<div class="top-nav">
 				    <span class="menu"> </span>
 					<ul>
-						<li><a href="index.html">学院概况</a></li>
-					  	<li><a href="about.html">教育教学</a></li>
-					  	<li><a href="services.html">科教研究</a></li>
-					  	<li><a href="blog.html">学团工作</a></li>
-					  	<li><a href="contact.html">党政思建</a></li>		
-					</ul>
+					<li class="active"><a href="/DQAndInformationWeb/LeadershipServlet">学院概况</a></li>
+					<li><a href="/DQAndInformationWeb/jiaoyujiaoxue/edu.html">教育教学</a></li>
+					<li><a href="/DQAndInformationWeb/kjyj/index.jsp">科教研究</a></li>
+					<li><a href="/DQAndInformationWeb/xuetuangongzuo.jsp">学团工作</a></li>
+					<li><a href="/DQAndInformationWeb/dangzheng/dangzheng.html">党政思建</a></li>
+				</ul>
 				<!-- script-nav -->
 
 			<script>
