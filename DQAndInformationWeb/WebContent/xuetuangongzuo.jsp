@@ -39,11 +39,11 @@
 			<div class="top-nav wow bounce" data-wow-delay="0.4s">
 				<span class="menu"> </span>
 				<ul>
-					<li class="active"><a href="#">学院概况</a></li>
-					<li><a href="#">教育教学</a></li>
-					<li><a href="#">科教研究</a></li>
-					<li><a href="#">学团工作</a></li>
-					<li><a href="dangzheng/dangzheng.html">党政思建</a></li>
+					<li class="active"><a href="/DQAndInformationWeb/LeadershipServlet">学院概况</a></li>
+					<li><a href="/DQAndInformationWeb/jiaoyujiaoxue/edu.html">教育教学</a></li>
+					<li><a href="/DQAndInformationWeb/kjyj/index.jsp">科教研究</a></li>
+					<li><a href="/DQAndInformationWeb/xuetuangongzuo.jsp">学团工作</a></li>
+					<li><a href="/DQAndInformationWeb/dangzheng/dangzheng.html">党建思政</a></li>
 				</ul>
 				<!-- script-nav -->
 				<script>
