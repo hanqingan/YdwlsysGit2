@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ydwlsys.entity.Content;
 import com.ydwlsys.entity.Group;
+import com.ydwlsys.entity.Navigation;
 
 public interface Xtdao {
 
@@ -11,5 +12,8 @@ public interface Xtdao {
 
 	List<Content> findNei(String name) throws Exception;
 	
+	List<Content> findAll(int i, int pageSize) throws Exception;
+	
+	int findCount() throws Exception;
 
 }

@@ -20,7 +20,7 @@ import com.ydwlsys.service.impl.BackServiceImpl;
  * Servlet implementation class BackStage
  */
 @WebServlet("/back")
-public class BackStage extends HttpServlet {
+public class BackStageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -40,8 +40,8 @@ public class BackStage extends HttpServlet {
 			save(request, response);
 		} else if ("update".equals(method)) {
 			update(request, response);
-		}else if("Login".equals(method)){
-			 Login(request,response);
+		} else if ("Login".equals(method)) {
+			Login(request, response);
 		}
 	}
 
@@ -50,18 +50,18 @@ public class BackStage extends HttpServlet {
 		try {
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
-			
-			if("123".equals(username)&&"123".equals(password)) {
+
+			if ("123".equals(username) && "123".equals(password)) {
 				/* request.getParameter("ZsjyBack.jsp"). */
 				request.getRequestDispatcher("BackStage.jsp").forward(request, response);
-			}else {
+			} else {
 				request.setAttribute("msg", "用户名或密码错误");
 				request.getRequestDispatcher("BackLogin.jsp").forward(request, response);
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
+		}
 	}
 
 	private void update(HttpServletRequest request, HttpServletResponse response) {
@@ -71,10 +71,10 @@ public class BackStage extends HttpServlet {
 			Navigation navigation = new Navigation();
 			String vid = request.getParameter("vid");
 			/* System.out.println(vid); */
-			 BeanUtils.populate(navigation,parameterMap); 
+			BeanUtils.populate(navigation, parameterMap);
 			BackServiceImpl serviceImpl = new BackServiceImpl();
 			serviceImpl.update(navigation, vid);
-			response.getWriter().print("ok"); 
+			response.getWriter().print("ok");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -130,7 +130,6 @@ public class BackStage extends HttpServlet {
 			/* 查询全部文章头部数据 */
 			IBackService serviceImpl = new BackServiceImpl();
 			String list = serviceImpl.ZsfindAll(pageNnmber, pageSize);
-			/* System.out.println(list); */
 			response.getWriter().print(list);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
