@@ -7,18 +7,26 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
+
 import com.ydwlsys.dao.LeadershipDao;
+import com.ydwlsys.entity.Content;
 import com.ydwlsys.entity.Leadership;
+import com.ydwlsys.utils.DataSourceUtils;
 import com.ydwlsys.utils.JDBCUtils;
 
 public class LeadershipDaoImpl implements LeadershipDao {
 
+	List<Leadership> list=new ArrayList<Leadership>();
+	
 	@Override
 	public List<Leadership> getAllFile(){
 		
 		JDBCUtils leader=new JDBCUtils();
 		Connection conn;
-		List<Leadership> list=null;
+	
 		try {
 			conn = leader.getConnection();
 			String sql="select * from tbleadership";
@@ -46,4 +54,33 @@ public class LeadershipDaoImpl implements LeadershipDao {
 	
 		return list;	
 }
+
+	@Override
+	public List<Leadership> findAll(int i, int pageSize){
+		// TODO Auto-generated method stub
+		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
+		String sql = "select * from tbleadership limit ?,?";
+		try {
+			list = qr.query(sql, new BeanListHandler<Leadership>(Leadership.class), i, pageSize);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	@Override
+	public int findCount(){
+		// TODO Auto-generated method stub
+		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
+		String sql = "select count(*) from tbleadership";
+		Long l=0L;
+		try {
+			l = (Long) qr.query(sql, new ScalarHandler());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return l.intValue();
+	}
 }

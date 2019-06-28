@@ -12,7 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ydwlsys.entity.File;
 import com.ydwlsys.entity.TeaDy;
-import com.ydwlsys.utils.JdbcChar;
+import com.ydwlsys.service.IFileService;
+import com.ydwlsys.service.ITeaDyService;
+import com.ydwlsys.service.ITeacherService;
+import com.ydwlsys.service.impl.FileServiceImpl;
+import com.ydwlsys.service.impl.TeaDyServiceImpl;
+import com.ydwlsys.service.impl.TeacherServiceImpl;
+
 @WebServlet("/list_text")
 public class eduServlet extends HttpServlet{
 
@@ -28,9 +34,13 @@ public class eduServlet extends HttpServlet{
 			throws ServletException, IOException {
 		// TODO 自动生成的方法存根
 //		req.getRequestDispatcher("/list-text.html").forward(req, resp);
-		JdbcChar char1=new JdbcChar();
+//		JdbcChar char1=new JdbcChar();
+//		List<TeaDy> list=new ArrayList<TeaDy>();
+//		list=char1.getAllTeaDy();
+//		req.setAttribute("list", list);
+		ITeaDyService iTeaDyService=new TeaDyServiceImpl();
 		List<TeaDy> list=new ArrayList<TeaDy>();
-		list=char1.getAllTeaDy();
+		list=iTeaDyService.getAllTeaDy();
 		req.setAttribute("list", list);
 		req.getRequestDispatcher("/jiaoyujiaoxue/teaDy.jsp").forward(req, resp);
 	}

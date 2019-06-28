@@ -14,7 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ydwlsys.entity.File;
-import com.ydwlsys.utils.JdbcChar;
+import com.ydwlsys.service.IFileService;
+import com.ydwlsys.service.impl.FileServiceImpl;
+import com.ydwlsys.utils.JDBCUtils;
+
 @WebServlet("/xiazai")
 public class XiaZaiServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
@@ -46,9 +49,11 @@ public class XiaZaiServlet extends HttpServlet{
 		//下载文件，需要设置消息头
 		 String name =req.getParameter("fileName");
 		
-		 JdbcChar ch=new JdbcChar();
+		 JDBCUtils ch=new JDBCUtils ();
 		 List<File> list=new ArrayList<File>();
-		 list=ch.getFileByName(name);
+		 
+		 IFileService aa=new FileServiceImpl();
+		 list=aa.getFileByName(name);
 		  String file=list.get(0).getFileAddress();
 		resp.addHeader("Content-Type","application/octet-stream");
 		 resp.addHeader("Content-Disposition","attachement;filename="+name);

@@ -13,28 +13,62 @@
 <link rel="stylesheet" href="../css/style1.css" type="text/css" media="all" />
 </head>
 <body>
-	<div id="hearder2" class="clearfix">
-			<div class="logo">
-				<img src="../images/jiaoyujiaoxue/logo1.png">
-			</div>
-			
-		</div>	
-		<div id="menu-box" class="clearfix">
-			<ul>
-				<li><a href="../index.html">首页</a></li>
-				<li><a href="../index.html">学院概况</a></li>
-				<li><a href="../professionalIntrocducion.html">专业介绍</a></li>
-				<li><a href="../shiziduiwu/zaizhijiaoshi/zaizhijiaoshi.html">师资队伍</a></li>
-				<li><a href="edu.html">教育教学</a></li>
-				<li><a href="#">科教研究</a></li>
-				<li><a href="#">学团工作</a></li>
-				<li><a href="../dangzheng/dangzheng.html">党建思政</a></li>
-				<li><a href="../zs?method=findBycid&cid=1">招生就业</a></li>
-
-			</ul>
+		<div class="header_about"> </div>
+   <div class="header-home">
+	<div class="fixed-header">
+		<div class="logo">
+			<a href="index.html">
+	          <span class="secondary">Careers,skills</span>
+	          <span class="main">Ability</span>
+	        </a>
 		</div>
-		<div id="slider-box" style="background:url(../images/jiaoyujiaoxue/slider4.png) center center;"></div>
-		<!-- detail -->
+				<div class="top-nav">
+				    <span class="menu"> </span>
+					<ul>
+						<li><a href="../index.html">学院概况</a></li>
+					  	<li class="active"><a href="edu.html">教育教学</a></li>
+					  	<li><a href="#">科教研究</a></li>
+					  	<li><a href="#">学团工作</a></li>
+					  	<li><a href="../dangzheng/dangzheng.html">党政思建</a></li>		
+					</ul>
+				<!-- script-nav -->
+			<script>
+			$("span.menu").click(function(){
+				$(".top-nav ul").slideToggle(500, function(){
+				});
+			});
+			</script>
+			<!-- //script-nav -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+        <!--script-->
+		<script>
+			$(document).ready(function(){
+				$(".top-nav li a").click(function(){
+					$(this).parent().addClass("active");
+					$(this).parent().siblings().removeClass("active");
+				});
+			});
+		</script>
+			<!-- script-for sticky-nav -->
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-home").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-home").addClass("fixed");
+				}else{
+					$(".header-home").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+	<!--//header-->
 		
 		<div id="detail2-box" class="clearfix">
 			<div class="tit-80">特色培养项目 - 查看详情</div>

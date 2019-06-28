@@ -17,4 +17,10 @@ public class LeadershipServiceImpl implements LeadershipService {
 		return leadership.getAllFile();
 	}
 
+	@Override
+	public List<Leadership> findAll(int pageNnmber, int pageSize) {
+		// TODO Auto-generated method stub
+		return leadership.findAll(pageNnmber, pageSize);
+	}
+
 }

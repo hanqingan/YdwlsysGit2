@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ydwlsys.entity.File;
 import com.ydwlsys.entity.TeaDy;
-import com.ydwlsys.utils.JdbcChar;
+import com.ydwlsys.service.ITeaDyService;
+import com.ydwlsys.service.impl.TeaDyServiceImpl;
+
 @WebServlet("/teaDyServlet")
 public class TeaDyServlet extends HttpServlet{
 
@@ -28,11 +30,15 @@ public class TeaDyServlet extends HttpServlet{
 			throws ServletException, IOException {
 		// TODO 自动生成的方法存根
 //		System.out.println("aaa");
+//		String name=req.getParameter("teaDyName");
+//		JdbcChar ch=new JdbcChar();
+//		
+//		List<TeaDy> list=new ArrayList<TeaDy>();
+//		list=ch.getTeaDyByName(name);
 		String name=req.getParameter("teaDyName");
-		JdbcChar ch=new JdbcChar();
-		
+		ITeaDyService iTeaDyService=new TeaDyServiceImpl();
 		List<TeaDy> list=new ArrayList<TeaDy>();
-		list=ch.getTeaDyByName(name);
+		list=iTeaDyService.getFileByName(name);
 		
 		req.setAttribute("list", list);
 		req.getRequestDispatcher("/jiaoyujiaoxue/teaDyResult.jsp").forward(req, resp);

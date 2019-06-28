@@ -114,6 +114,23 @@
 				})
 			}
 		}
+		
+		function xueyuangaikuang() {
+			// 先判断选项卡中是否有指定的选项卡
+			var flg = $("#tabsss").tabs("exists", "学院概况");
+			if (flg) {
+				// 有---跳过去
+				$("#tabsss").tabs("select", "学院概况");
+			} else {
+				// 没有--创建
+				$("#tabsss").tabs("add", {
+					title : "学院概况",
+					closable : true,
+					/* 引入页面内容 */
+					href : "${pageContext.request.contextPath}/admin/xueyuangaikuang/xueyuangaikuang.jsp"
+				})
+			}
+		}
 	</script>
 </body>
 </html>

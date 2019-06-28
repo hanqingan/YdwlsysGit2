@@ -10,8 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ydwlsys.dao.impl.DownLoadImpl;
 import com.ydwlsys.entity.File;
-import com.ydwlsys.utils.JdbcChar;
+import com.ydwlsys.service.IFileService;
+import com.ydwlsys.service.impl.FileServiceImpl;
+import com.ydwlsys.utils.JDBCUtils;
+
 
 @WebServlet("/aa")
 public class DownLoadServlet extends HttpServlet {
@@ -27,10 +31,14 @@ public class DownLoadServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		// TODO 自动生成的方法存根
-		JdbcChar char1=new JdbcChar();
+//		DownLoadImpl char1=new DownLoadImpl();
+//		List<File> list=new ArrayList<File>();
+//		list=char1.getFileByName();
+//		req.setAttribute("list", list);
+		
+		IFileService fileService=new FileServiceImpl();
 		List<File> list=new ArrayList<File>();
-		list=char1.getAllFile();
-//		System.out.println(list.size());
+		list=fileService.getAllFile();
 		req.setAttribute("list", list);
 		req.getRequestDispatcher("/jiaoyujiaoxue/downLoad.jsp").forward(req, resp);
 

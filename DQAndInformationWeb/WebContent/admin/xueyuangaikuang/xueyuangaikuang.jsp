@@ -10,20 +10,22 @@
 		<!-- 要开始展示类别信息了....(和数据库进行一步交互) -->
 		<table id="list"></table>  
 		<div id="dialog"></div>
-		alert(11111);
 		<script>
 			$('#list').datagrid
 			({
-              url:'${pageContext.request.contextPath}/xt?method=findAll',		   // 要访问的serrvlet的地址  返回的是json数据
+              url:'${pageContext.request.contextPath}/LeadershipServlet?method=findAll',		   // 要访问的serrvlet的地址  返回的是json数据
 			    columns:  // 根据返回来的json数据进行匹配
 			    [[  
 			      	/* 				
 			      		title:页面标题
 			      		field:会和返回json的key做对比 对比成功 将value值放在分类编号等这一列
 			      	*/
-			        {field:'text_id',title:'文章编号',width:20},    
-			        {field:'text_name',title:'文章名称',width:300}, 
-			        {field:'text',title:'文章名称',width:1000}, 
+			        {field:'name',title:'姓名',width:20},    
+			        {field:'job',title:'职位',width:300}, 
+			        {field:'resume',title:'所获荣誉',width:1000}, 
+			        {field:'education',title:'学历背景',width:20},    
+			        {field:'honors',title:'文章名称',width:300}, 
+			        {field:'position',title:'文章名称',width:1000}, 
 			        {field:'xxxxx',title:'操作',width:100,formatter: function(value,row,index)
 												        {
 												        	/* 
@@ -108,12 +110,8 @@
 					 width:550,
 					height:630,
 					href:"xtgz_update.jsp?vid="+vid
-					
 				});  
-	
-			
 			}
-			
 			
 		</script>
 		
