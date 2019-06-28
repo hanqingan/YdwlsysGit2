@@ -15,8 +15,6 @@ import com.ydwlsys.utils.JdbcChar;
 
 @WebServlet("/DownServlet")
 public class DownServlet extends HttpServlet{
-
-	
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)

@@ -1,6 +1,7 @@
 package com.ydwlsys.entity;
 
 public class Teacher {
+	
 	private String Name;
 	private String Id;
 	private String Zy;
@@ -10,6 +11,14 @@ public class Teacher {
 	private String Scre;
 	private String Tr;
 	private String Image;
+	private String ming;
+	
+	public String getMing() {
+		return ming;
+	}
+	public void setMing(String ming) {
+		this.ming = ming;
+	}
 	public String getName() {
 		return Name;
 	}

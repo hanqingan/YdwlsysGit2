@@ -12,4 +12,10 @@ public interface ITeacherService {
 	public Teacher queryByName();
 	public Teacher queryById();
 	public List<Teacher> queryALL();
+
+	Teacher select(String post);
+
+	Teacher select();
+	
+	public Teacher findById(int id);
 }
