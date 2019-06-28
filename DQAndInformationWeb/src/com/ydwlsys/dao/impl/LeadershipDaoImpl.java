@@ -19,26 +19,26 @@ import com.ydwlsys.utils.JDBCUtils;
 
 public class LeadershipDaoImpl implements LeadershipDao {
 
-	List<Leadership> list=new ArrayList<Leadership>();
-	
 	@Override
-	public List<Leadership> getAllFile(){
-		
-		JDBCUtils leader=new JDBCUtils();
+	public List<Leadership> getAllFile() {
+
+		JDBCUtils leader = new JDBCUtils();
 		Connection conn;
-	
+
+		List<Leadership> list = new ArrayList<Leadership>();
+
 		try {
 			conn = leader.getConnection();
-			String sql="select * from tbleadership";
-			
+			String sql = "select * from tbleadership";
+
 			Statement statement;
 			ResultSet rs = null;
-			
-			list=new ArrayList<Leadership>();
-			statement=conn.createStatement();
-			rs=statement.executeQuery(sql);
-			while(rs.next()){
-				Leadership leader1=new Leadership();
+
+			list = new ArrayList<Leadership>();
+			statement = conn.createStatement();
+			rs = statement.executeQuery(sql);
+			while (rs.next()) {
+				Leadership leader1 = new Leadership();
 				leader1.setName(rs.getString(1));
 				leader1.setJob(rs.getString(2));
 				leader1.setResume(rs.getString(3));
@@ -51,14 +51,16 @@ public class LeadershipDaoImpl implements LeadershipDao {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-	
-		return list;	
-}
+
+		return list;
+	}
 
 	@Override
-	public List<Leadership> findAll(int i, int pageSize){
+	public List<Leadership> findAll(int i, int pageSize) {
 		// TODO Auto-generated method stub
 		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
+		List<Leadership> list = new ArrayList<Leadership>();
+
 		String sql = "select * from tbleadership limit ?,?";
 		try {
 			list = qr.query(sql, new BeanListHandler<Leadership>(Leadership.class), i, pageSize);
@@ -70,11 +72,11 @@ public class LeadershipDaoImpl implements LeadershipDao {
 	}
 
 	@Override
-	public int findCount(){
+	public int findCount() {
 		// TODO Auto-generated method stub
 		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "select count(*) from tbleadership";
-		Long l=0L;
+		Long l = 0L;
 		try {
 			l = (Long) qr.query(sql, new ScalarHandler());
 		} catch (SQLException e) {
